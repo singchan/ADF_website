@@ -318,16 +318,16 @@ TOP REISEBUS KOSTENVORANSCHLAG
 										</tr>
 										
 										<tr style="display:none;" class="ZoneRetour">
-												<td style="width:80px;text-align:right;">Retour le </td>
+												<td style="width:80px;text-align:right;">Zurück am : </td>
 											
 												<td><input name="date_retour" type="text" class="validate[required] champA Infos Ltiers2" id="date_retour" placeholder="JJ/MM/AAAA" size="16"></td>
 												
 												<td>
 													<input name="radio_approximation_retour" type="radio" id="radio_approximation_retour_depart" value="depart">
-													<label for="radio_approximation_retour_depart">Départ à</label>
+													<label for="radio_approximation_retour_depart">Abfahrt um</label>
 												
 													<input name="radio_approximation_retour" type="radio" id="radio_approximation_retour_arrivee" value="arrivee" checked="checked">
-													<label for="radio_approximation_retour_arrivee">Arrivée à</label>
+													<label for="radio_approximation_retour_arrivee">Ankunft um</label>
 												</td>
 											
 												<td>
@@ -373,138 +373,58 @@ TOP REISEBUS KOSTENVORANSCHLAG
 									<tr class="ZoneRepasConducteur">
 										<td colspan="1"></td>
 										<td colspan="2">
-														Le client prend en charge les repas du conducteur.
+														Der Kunde übernimmt die Verpflegung des Fahrers.
 										</td>
 										<td colspan="1">
 														<input name="radio_repas_conducteur" type="radio" id="radio_repas_conducteur_oui" value="Oui" checked="checked">
-														<label for="radio_repas_conducteur_oui">Oui</label>
+														<label for="radio_repas_conducteur_oui">Ja</label>
 													<br>
 														<input type="radio" name="radio_repas_conducteur" id="radio_repas_conducteur_non" value="Non">
-														<label for="radio_repas_conducteur_non">Non</label>
+														<label for="radio_repas_conducteur_non">Nein</label>
 										</td>
 									</tr>
 									<tr style="display:none;" class="ZoneFraisHebergement">
 										<td colspan="1"></td>
 										<td colspan="2">
-														Le client prend en charge les frais d’hébergement.
+														Der Kunde übernimmt die Übernachtungskosten.
 										</td>
 										<td colspan="1">
 														<input name="radio_hebergement_conducteur" type="radio" id="radio_hebergement_conducteur_oui" value="Oui" checked="checked">
-														<label for="radio_hebergement_conducteur_oui">Oui</label>
+														<label for="radio_hebergement_conducteur_oui">Ja</label>
 													<br>
 														<input type="radio" name="radio_hebergement_conducteur" id="radio_hebergement_conducteur_non" value="Non">
-														<label for="radio_hebergement_conducteur_non">Non</label>
+														<label for="radio_hebergement_conducteur_non">Nein</label>
 										</td>
 									</tr><tr style="display:none;" class="ZoneAutocarSurPlace">
 										<td colspan="1"></td>
 										<td colspan="2">
-														Avez-vous besoin de l'autocar sur place ?
+														Brauchen Sie den Reisebus vor Ort ?
 										</td>
 										<td colspan="1">
 														<input name="radio_dispo_autocar" type="radio" id="radio_dispo_autocar_oui" value="Oui" checked="checked">
-														<label for="radio_dispo_autocar_oui">Oui</label>
+														<label for="radio_dispo_autocar_oui">Ja</label>
 													<br>
 														<input type="radio" name="radio_dispo_autocar" id="radio_dispo_autocar_non" value="Non">
-														<label for="radio_dispo_autocar_non">Non</label>
+														<label for="radio_dispo_autocar_non">Nein</label>
 										</td>
 									</tr>
 <tr class="ZonePrestaVAller" style="display:none;">
 										<td colspan="1"></td>
 										<td colspan="2">
-														Prestations durant le voyage Aller
+														Dienstleistungen während der Rückreise
 										</td>
 										<td colspan="1">
 														<input type="checkbox" name="radio_prestaplus_valler_petitdej" id="radio_prestaplus_valler_petitdej" value="Petit-déjeuner">
-														<label for="radio_prestaplus_valler_petitdej">Petit-déjeuner</label>
+														<label for="radio_prestaplus_valler_petitdej">Frühstück</label>
 <br>
 														<input type="checkbox" name="radio_prestaplus_valler_dejeuner" id="radio_prestaplus_valler_dejeuner" value="Déjeuner">
-														<label for="radio_prestaplus_valler_dejeuner">Déjeuner</label>
+														<label for="radio_prestaplus_valler_dejeuner">Mittagessen</label>
 <br>
 														<input type="checkbox" name="radio_prestaplus_valler_diner" id="radio_prestaplus_valler_diner" value="Diner">
-														<label for="radio_prestaplus_valler_diner">Dîner</label>
+														<label for="radio_prestaplus_valler_diner">Abendessen</label>
 <br>
 														<input type="checkbox" name="radio_prestaplus_valler_boissonsincluses" id="radio_prestaplus_valler_boissonsincluses" value="Boissons incluses">
-														<label for="radio_prestaplus_valler_boissonsicluses">Boissons incluses</label>
-										</td>
-									</tr>
-<tr class="ZonePrestaHeber" style="display:none;">
-										<td colspan="1"></td>
-										<td colspan="2">
-														Hébergement : ( petit déjeuner inclus )
-										</td>
-										<td colspan="1">
-														<input name="radio_prestaplus_heber" type="checkbox" id="check_heber_auberge" value="Auberge de jeunesse">
-														<label for="radio_prestaplus_heber">Auberge de jeunesse</label>
-													<br>
-														<input type="checkbox" name="radio_prestaplus_h1" id="check_heber_hotel1" value="Hotel1">
-														<label for="radio_prestaplus_h1">Hôtel 1*</label>
-<br>
-														<input type="checkbox" name="radio_prestaplus_h2" id="check_heber_hotel2" value="Hotel2">
-														<label for="radio_prestaplus_h2">Hôtel 2*</label>
-<br>
-														<input type="checkbox" name="radio_prestaplus_h3" id="check_heber_hotel3" value="Hotel3">
-														<label for="radio_prestaplus_h3">Hôtel 3*</label>
-<br>
-														<input type="checkbox" name="radio_prestaplus_h4" id="check_heber_hotel4" value="Hotel4">
-														<label for="radio_prestaplus_h4">Hôtel 4*</label>
-
-										</td>
-									</tr>
-<tr class="ZonePrestaRestauration" style="display:none;">
-										<td colspan="1"></td>
-										<td colspan="2">
-														Restauration
-										</td>
-										<td colspan="1">
-														<input name="radio_prestaplus_rest" type="checkbox" id="check_rest_demipension" value="1/2 pension">
-														<label for="radio_prestaplus_rest">1/2 Pension</label>
-													<br>
-														<input type="checkbox" name="radio_prestaplus_rest" id="check_rest_pensioncomplete" value="Pension complète">
-														<label for="radio_prestaplus_rest">Pension complète</label>
-<br>
-														<input type="checkbox" name="radio_prestaplus_rest" id="check_rest_boissoninclus" value="Boissons incluses">
-														<label for="radio_prestaplus_rest">Boissons incluses</label>
-<br>
-										</td>
-									</tr>
-<tr class="ZonePrestaAutres" style="display:none;">
-										<td colspan="1"></td>
-										<td colspan="2">
-														Autres prestations ( précisez dans le cadre informations complémentaires ):
-										</td>
-										<td colspan="1">
-														<br>
-														<input type="checkbox" name="radio_prestaplus_autre" id="check_prestasup_accompagnateur" value="Accompagnateur">
-														<label for="check_prestasup_accompagnateur">Accompagnateur</label>
-<br>
-														<input type="checkbox" name="radio_prestaplus_visite" id="check_prestasup_visite" value="Visites, spectacles">
-														<label for="check_prestaplus_visite">Visites, spectacles</label>
-<br>
-                                                                                                                <input type="checkbox" name="radio_prestaplus_dinerspectacle" id="check_prestasup_dinerspectacle" value="Diner spectacle">
-														<label for="radio_prestaplus_dinerspectacle">Dîner spectacle</label>
-<br>
-														<input type="checkbox" name="radio_prestaplus_soireetheme" id="check_prestasup_soireetheme" value="Soiree a theme">
-														<label for="radio_prestaplus_soireetheme">Soirée à thème</label>
-<br>
-										</td>
-									</tr>
-<tr class="ZonePrestaVRetour" style="display:none;">
-										<td colspan="1"></td>
-										<td colspan="2">
-														Prestations durant le voyage Retour
-										</td>
-										<td colspan="1">
-														<input type="checkbox" name="radio_prestaplus_vretour_petitdej" id="radio_prestaplus_vretour_petitdej" value="Petit-déjeuner">
-														<label for="radio_prestaplus_vretour_petitdej">Petit-déjeuner</label>
-<br>
-														<input type="checkbox" name="radio_prestaplus_vretour_dejeuner" id="radio_prestaplus_vretour_dejeuner" value="Déjeuner">
-														<label for="radio_prestaplus_vretour_dejeuner">Déjeuner</label>
-<br>
-														<input type="checkbox" name="radio_prestaplus_vretour_diner" id="radio_prestaplus_vretour_diner" value="Diner">
-														<label for="radio_prestaplus_vretour_diner">Dîner</label>
-<br>
-														<input type="checkbox" name="radio_prestaplus_vretour_boissonsincluses" id="radio_prestaplus_vretour_boissonsincluses" value="Boissons incluses">
-														<label for="radio_prestaplus_vretour_boissonsincluses">Boissons incluses</label>
+														<label for="radio_prestaplus_valler_boissonsicluses">Getränke inklusive</label>
 										</td>
 									</tr>
 <tr class="ZonePrestaCommentaire" style="display:none;">
